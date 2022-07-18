@@ -12,6 +12,7 @@ function App() {
     </div>
   );
 }
+
 const Home = () => {
   return (
     <section className="Home w-screen h-screen flex flex-col justify-between p-4">

@@ -1,6 +1,6 @@
 import React from "react";
 import gridData from "../data";
-import Gif from "../../public/images/design.gif";
+import Gif from "/images/design.gif";
 import { ButtonPrim } from "./ButtonPrim";
 import { ButtonSec } from "./ButtonSec";
 
