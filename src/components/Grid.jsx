@@ -1,6 +1,6 @@
 import React from "react";
 import gridData from "../data";
-import MovingImage from "/images/design.gif";
+import MovingImage from "/images/design.webp";
 import { ButtonPrim } from "./ButtonPrim";
 import { ButtonSec } from "./ButtonSec";
 
