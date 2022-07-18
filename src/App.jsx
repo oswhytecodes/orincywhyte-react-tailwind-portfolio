@@ -1,6 +1,7 @@
 import "./index.css";
 import { Portfolio } from "./components/Portfolio";
 import { Routes, Route, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 function App() {
   return (
     <div className="App">
@@ -15,16 +16,16 @@ const Home = () => {
   return (
     <section className="Home w-full h-screen flex flex-col justify-between p-4">
       <div className="flex justify-between">
-        <a className="hover:text-accent" href="">
-          <li>about</li>
-        </a>
-        <a className="hover:text-accent" href="">
-          <li>projects</li>
-        </a>
+        <HashLink to="/portfolio#about">
+          <li className="hover:text-accent transition">about</li>
+        </HashLink>
+        <HashLink to="/portfolio#projects">
+          <li className="hover:text-accent transition ">projects</li>
+        </HashLink>
       </div>
       <div className="flex flex-col justify-center items-center">
         <Link to="/portfolio">
-          <i className="fa-solid fa-circle-down text-3xl text-accent"></i>
+          <i className="fa-solid fa-circle-down text-3xl text-accent/70 animate-bounce"></i>
         </Link>
         <h1 className="font-serif font-bold sm:text-6xl text-4xl mt-6">
           Orincy Whyte
@@ -34,15 +35,13 @@ const Home = () => {
         </h2>
       </div>
       <div className="flex justify-between">
-        <a
-          className="hover:text-accent"
-          href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
-        >
-          <li>resume</li>
+        <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing">
+          <li className="hover:text-accent transition">resume</li>
         </a>
-        <a className="hover:text-accent" href="">
-          <li>contact</li>
-        </a>
+
+        <HashLink to="/portfolio#footer">
+          <li className="hover:text-accent transition">contact</li>
+        </HashLink>
       </div>
     </section>
   );

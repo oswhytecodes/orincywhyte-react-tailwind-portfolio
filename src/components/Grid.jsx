@@ -14,7 +14,7 @@ export const Grid = () => {
         <img
           className="w-96 h-96 object-cover"
           src={el.img}
-          alt="hey hey heyy"
+          alt={el.alt}
         />
         {/* text container */}
         <div
@@ -26,8 +26,8 @@ export const Grid = () => {
             {el.text}{" "}
           </p>
           <div className="flex mt-6 gap-2">
-            <ButtonPrim />
-            <ButtonSec />
+           <a href={el.live} target="_blank"> <ButtonPrim /></a>
+           <a href={el.code} target="_blank"><ButtonSec /></a> 
           </div>
         </div>
       </div>
@@ -67,26 +67,26 @@ export const Grid = () => {
           </h1>
           <div>
             {" "}
-            <img className="w-96 md:mt-4 mt-4" src={Gif} alt="" />
+            <img className="w-96 md:mt-4 mt-4" src={Gif} alt="Gif showing a variety of projects" />
           </div>
         </div>
 
         <div className="flex flex-wrap md:justify-around justify-center gap-2 mt-4 md:py-8">
           <div className="flex items-center gap-2">
-            <i class="fa-solid fa-star text-accent text-2xl"></i>
+            <i className="fa-solid fa-star text-accent text-2xl"></i>
             <h3 className="font-poppins font-light  md:text-xl text-xl">
               Frontend Dev
             </h3>
           </div>
           <div className="flex items-center gap-2">
-            <i class="fa-solid fa-star text-accent text-2xl"></i>
+            <i className="fa-solid fa-star text-accent text-2xl"></i>
             <h3 className="font-poppins font-light  md:text-xl text-xl">
               Graphic Designer
             </h3>
           </div>
 
           <div className="flex items-center gap-2">
-            <i class="fa-solid fa-star text-accent text-2xl"></i>
+            <i className="fa-solid fa-star text-accent text-2xl"></i>
             <h3 className="font-poppins font-light  md:text-xl text-xl">
               Textile Art{" "}
             </h3>

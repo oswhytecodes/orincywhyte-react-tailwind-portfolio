@@ -1,26 +1,34 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import HeroImage from "/images/orincy.jpeg";
 
 export const Hero = () => {
   return (
-    <section id="about" className="mt-4 grid gap-4">
-      <div className="flex flex-wrap lg:justify-between gap-6 justify-center p-4">
+    <section id="about" className="mt-8">
+      <div className="flex flex-wrap gap-4 md:gap-8 lg:justify-between justify-center md:px-16 px-6">
         <img className="w-96 object-cover" src={HeroImage} alt="Orincy Whyte" />
-        <div className="h-full flex flex-col justify-center items-baseline ">
-          <h1 className="font-serif text-2xl">
-            Frontend Developer | Graphic Designer
+
+        <div className="flex flex-col items-center">
+          <h1 className="font-serif ">
+            Frontend Developer & Graphic Designer
           </h1>
-          <p className="m-auto mt-6 max-w-[24em] leading-8 font-poppins font-light">
-            A Front-End Engineer based in the US, ready to get my feet wet in
-            the tech industry. I am a quick learner, creative and constantly
-            building. My strongest skills involve me creating and building
-            design layouts and graphics. I am skilled in layout design using
-            Abode Creative Cloud and Figma. I am proficient in HTML and CSS
-            along with JavaScript and ReactJs. I am an experienced and
+          <p className="my-6 max-w-[24em] leading-6 tracking-wide font-poppins font-light">
+            A Frontend Engineer based in the US, ready to get my feet wet in the
+            tech industry. I am a quick learner, creative and constantly
+            building. My strongest skills involve me designing, creating and
+            building responsive layouts and graphics. I am skilled in layout
+            design, using Abode Creative Cloud and Figma. I am proficient in
+            HTML and CSS along with JavaScript and Git. I am an experienced and
             professional Graphic Designer with a demonstrated history of working
             in the graphic design industry. Consider me when searching for a
             creative developer.
           </p>
+          <HashLink to="#projects">
+            {" "}
+            <button className="cursor uppercase font-poppins hover:bg-accent/50  bg-accent  py-2 px-6 w-36 text-center">
+              PROJECTS
+            </button>
+          </HashLink>
         </div>
       </div>
       <div>

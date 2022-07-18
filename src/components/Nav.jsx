@@ -11,14 +11,14 @@ export const Nav = () => {
     <header >
       <nav className="py-4 px-8  w-full sticky  top-0 left-0 bg-accent drop-shadow-lg">
         <div className="MENU hidden md:flex justify-between items-center lowercase m-auto w-[30rem]">
-          <a href="#about"><li>About</li></a>
-          <a href="#projects"><li>Projects</li></a>
+          <a href="#about"><li className="hover:text-[#f2f2f2] transition" >About</li></a>
+          <a href="#projects"><li className="hover:text-[#f2f2f2] transition">Projects</li></a>
           <Link to="/">
             {" "}
             <img className="w-[50px]" src={Logo} alt="Logo" />{" "}
           </Link>
-         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"><li>Resume</li></a> 
-         <a href="#footer"> <li>Contact</li></a>
+         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"><li className="hover:text-[#f2f2f2] transition">Resume</li></a> 
+         <a href="#footer"> <li className="hover:text-[#f2f2f2] transition">Contact</li></a>
         </div>
 
 
@@ -30,7 +30,8 @@ export const Nav = () => {
           <i onClick={handleClick} className="fa-solid fa-bars text-2xl"></i>
         </div>
       </nav>
-      <Menu noOverlay width={"100%"}>
+
+      {/* <Menu noOverlay width={"100%"}>
         <div className="mt-0 pt-0 ml-0 bg-[#fff] h-screen ">
           <div className="text-right pr-6 pt-4">
             <i onClick={handleClick} className="fa-solid fa-x text-2xl"></i>
@@ -50,7 +51,7 @@ export const Nav = () => {
             </a>
           </div>
         </div>
-      </Menu>
+      </Menu> */}
     </header>
   );
 };
