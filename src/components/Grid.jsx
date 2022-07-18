@@ -1,6 +1,6 @@
 import React from "react";
 import gridData from "../data";
-import Gif from "/images/design.gif";
+import Gif from "../../public/images/design.gif";
 import { ButtonPrim } from "./ButtonPrim";
 import { ButtonSec } from "./ButtonSec";
 
@@ -11,11 +11,7 @@ export const Grid = () => {
     return (
       <div key={el.id} className="gridCom flex flex-wrap  justify-center">
         {/* image container */}
-        <img
-          className="w-96 h-96 object-cover"
-          src={el.img}
-          alt={el.alt}
-        />
+        <img className="w-96 h-96 object-cover" src={el.img} alt={el.alt} />
         {/* text container */}
         <div
           style={{ backgroundColor: el.color }}
@@ -26,8 +22,13 @@ export const Grid = () => {
             {el.text}{" "}
           </p>
           <div className="flex mt-8 gap-2">
-           <a href={el.live} target="_blank"> <ButtonPrim /></a>
-           <a href={el.code} target="_blank"><ButtonSec /></a> 
+            <a href={el.live} target="_blank">
+              {" "}
+              <ButtonPrim />
+            </a>
+            <a href={el.code} target="_blank">
+              <ButtonSec />
+            </a>
           </div>
         </div>
       </div>
@@ -67,7 +68,11 @@ export const Grid = () => {
           </h1>
           <div>
             {" "}
-            <img className="w-96 md:mt-4 mt-4" src={Gif} alt="Gif showing a variety of projects" />
+            <img
+              className="w-96 md:mt-4 mt-4"
+              src={Gif}
+              alt="Gif showing a variety of projects"
+            />
           </div>
         </div>
 
