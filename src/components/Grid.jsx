@@ -25,7 +25,7 @@ export const Grid = () => {
           <p className="max-w-[13em] text-slate-500 mt-4 text-lg font-serif text-center">
             {el.text}{" "}
           </p>
-          <div className="flex mt-6 gap-2">
+          <div className="flex mt-8 gap-2">
            <a href={el.live} target="_blank"> <ButtonPrim /></a>
            <a href={el.code} target="_blank"><ButtonSec /></a> 
           </div>
@@ -40,7 +40,7 @@ export const Grid = () => {
         <h1 className=" font-serif font-bold uppercase text-xl md:text-3xl md:pr-8 md:text-left text-center">
           my skills
         </h1>
-        <div className="flex flex-wrap justify-center px-12  gap-8 md:pt-0 pt-6 md:justify-between">
+        <div className="flex flex-wrap justify-center px-12 text-center  md:text-left  md:gap-8 gap-1 md:pt-0 pt-6 md:justify-between">
           <ul className="Skills">
             <li>Html</li>
             <li>Tailwind</li>
@@ -61,8 +61,8 @@ export const Grid = () => {
       {/* design comes in many forms */}
 
       <div className="md:px-12 px-4 py-10">
-        <div className="flex flex-col justify-between items-center">
-          <h1 className="font-serif md:text-3xl text-2xl font-semibold md:block text-center tracking-wider">
+        <div className="flex  flex-col justify-between items-center">
+          <h1 className="font-serif md:text-3xl text-xl font-semibold md:block text-center">
             Design comes in many forms
           </h1>
           <div>

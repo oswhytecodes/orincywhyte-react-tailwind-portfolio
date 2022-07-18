@@ -5,14 +5,14 @@ import HeroImage from "/images/orincy.jpeg";
 export const Hero = () => {
   return (
     <section id="about" className="mt-8">
-      <div className="flex flex-wrap gap-4 md:gap-8 lg:justify-between justify-center md:px-16 px-6">
+      <div className="w-full flex flex-wrap gap-4 md:gap-8 lg:justify-between justify-center md:px-16 px-6">
         <img className="w-96 object-cover" src={HeroImage} alt="Orincy Whyte" />
 
-        <div className="flex flex-col items-center">
-          <h1 className="font-serif ">
+        <div className="w-96 md:pt-8 pt-4 text-center">
+          <h1 className="font-serif md:text-3xl">
             Frontend Developer & Graphic Designer
           </h1>
-          <p className="my-6 max-w-[24em] leading-6 tracking-wide font-poppins font-light">
+          <p className="my-6 leading-6 tracking-wide font-poppins font-light">
             A Frontend Engineer based in the US, ready to get my feet wet in the
             tech industry. I am a quick learner, creative and constantly
             building. My strongest skills involve me designing, creating and
@@ -25,7 +25,8 @@ export const Hero = () => {
           </p>
           <HashLink to="#projects">
             {" "}
-            <button className="cursor uppercase font-poppins hover:bg-accent/50  bg-accent  py-2 px-6 w-36 text-center">
+            <button className="cursor uppercase font-poppins 
+            hover:text-[#e5f9d2] hover:bg-accent/90  bg-accent  py-2 px-6 w-36 text-center">
               PROJECTS
             </button>
           </HashLink>

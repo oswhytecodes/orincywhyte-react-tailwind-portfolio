@@ -14,7 +14,7 @@ function App() {
 }
 const Home = () => {
   return (
-    <section className="Home w-full h-screen flex flex-col justify-between p-4">
+    <section className="Home w-screen h-screen flex flex-col justify-between p-4">
       <div className="flex justify-between">
         <HashLink to="/portfolio#about">
           <li className="hover:text-accent transition">about</li>
@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <Link to="/portfolio">
-          <i className="fa-solid fa-circle-down text-3xl text-accent/70 animate-bounce"></i>
+          <i className="fa-solid fa-circle-down text-3xl transition hover:text-accent text-accent/80 animate-bounce"></i>
         </Link>
         <h1 className="font-serif font-bold sm:text-6xl text-4xl mt-6">
           Orincy Whyte

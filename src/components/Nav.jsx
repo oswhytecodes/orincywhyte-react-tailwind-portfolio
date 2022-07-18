@@ -9,16 +9,16 @@ export const Nav = () => {
   };
   return (
     <header >
-      <nav className="py-4 px-8  w-full sticky  top-0 left-0 bg-accent drop-shadow-lg">
-        <div className="MENU hidden md:flex justify-between items-center lowercase m-auto w-[30rem]">
-          <a href="#about"><li className="hover:text-[#f2f2f2] transition" >About</li></a>
-          <a href="#projects"><li className="hover:text-[#f2f2f2] transition">Projects</li></a>
+      <nav className="py-4 px-8  w-full sticky z-50 top-[20px] left-0 bg-accent drop-shadow-lg">
+        <div className="hidden md:flex justify-between items-center lowercase m-auto w-[30rem]">
+          <a href="#about"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition" >About</li></a>
+          <a href="#projects"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Projects</li></a>
           <Link to="/">
             {" "}
-            <img className="w-[50px]" src={Logo} alt="Logo" />{" "}
+            <img className="w-[50px] hover:animate-bounce" src={Logo} alt="Logo" />{" "}
           </Link>
-         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"><li className="hover:text-[#f2f2f2] transition">Resume</li></a> 
-         <a href="#footer"> <li className="hover:text-[#f2f2f2] transition">Contact</li></a>
+         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Resume</li></a> 
+         <a href="#footer"> <li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Contact</li></a>
         </div>
 
 

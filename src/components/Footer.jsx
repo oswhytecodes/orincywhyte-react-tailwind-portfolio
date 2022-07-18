@@ -29,7 +29,7 @@ export const Footer = () => {
           </li>
         </a>
         <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg">
-          {" "}
+          {" "} 
           <li>
             {" "}
             <i className="fa-brands fa-youtube"></i>
