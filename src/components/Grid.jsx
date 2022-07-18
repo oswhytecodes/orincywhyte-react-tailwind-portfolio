@@ -1,6 +1,6 @@
 import React from "react";
 import gridData from "../data";
-import Gif from "/images/design.gif";
+// import Gif from "/images/design.gif";
 import { ButtonPrim } from "./ButtonPrim";
 import { ButtonSec } from "./ButtonSec";
 
@@ -70,7 +70,7 @@ export const Grid = () => {
             {" "}
             <img
               className="w-96 md:mt-4 mt-4"
-              src={Gif}
+              src=""
               alt="Gif showing a variety of projects"
             />
           </div>
