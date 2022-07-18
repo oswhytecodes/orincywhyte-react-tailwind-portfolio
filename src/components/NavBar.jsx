@@ -21,7 +21,8 @@ export const NavBar = () => {
           <div className="text-right pr-6 pt-4">
             <i onClick={handleClick} className="fa-solid fa-x text-2xl"></i>
           </div>
-          <div className="flex flex-col pt-28 justify-center items-center font-serif text-2xl gap-10">
+          <div className="flex flex-col pt-28 justify-center items-center 
+          font-serif text-2xl gap-10">
             <a className="menu-item" href="">
               About
             </a>

@@ -18,15 +18,15 @@ const Home = () => {
     <section className="Home w-screen h-screen flex flex-col justify-between p-4">
       <div className="flex justify-between">
         <HashLink to="/portfolio#about">
-          <li className="hover:text-accent transition">about</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">about</li>
         </HashLink>
         <HashLink to="/portfolio#projects">
-          <li className="hover:text-accent transition ">projects</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition ">projects</li>
         </HashLink>
       </div>
       <div className="flex flex-col justify-center items-center">
         <Link to="/portfolio">
-          <i className="fa-solid fa-circle-down text-3xl transition hover:text-accent text-accent/80 animate-bounce"></i>
+          <i className="fa-solid fa-circle-down text-3xl hover:animate-pulse transition hover:text-accent text-accent/80 animate-bounce"></i>
         </Link>
         <h1 className="font-serif font-bold sm:text-6xl text-4xl mt-6">
           Orincy Whyte
@@ -37,11 +37,11 @@ const Home = () => {
       </div>
       <div className="flex justify-between">
         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing">
-          <li className="hover:text-accent transition">resume</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">resume</li>
         </a>
 
         <HashLink to="/portfolio#footer">
-          <li className="hover:text-accent transition">contact</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">contact</li>
         </HashLink>
       </div>
     </section>
