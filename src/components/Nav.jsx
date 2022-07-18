@@ -8,8 +8,8 @@ export const Nav = () => {
     console.log("hey");
   };
   return (
-    <header >
-      <nav className="py-4 px-8  w-full sticky z-50 top-[20px] left-0 bg-accent drop-shadow-lg">
+    <header  className="sticky top-0 left-0">
+      <nav className="py-4 px-8  w-full  z-50  bg-accent drop-shadow-lg">
         <div className="hidden md:flex justify-between items-center lowercase m-auto w-[30rem]">
           <a href="#about"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition" >About</li></a>
           <a href="#projects"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Projects</li></a>
