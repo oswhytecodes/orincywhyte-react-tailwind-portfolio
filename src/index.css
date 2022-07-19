@@ -23,6 +23,7 @@ section,
 footer {
   margin-inline: auto;
   max-width: 60em;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -49,7 +50,7 @@ img {
   left: 0;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 60px;
   align-items: center;
   overflow: hidden;
   width: 100%;

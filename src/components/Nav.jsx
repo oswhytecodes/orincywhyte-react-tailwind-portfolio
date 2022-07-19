@@ -29,18 +29,18 @@ export const Nav = () => {
         >
           <i
             onClick={() => setNavBarOpen(false)}
-            className="cursor-pointer self-end transition duration-700 ease-in-out -translate-x-8 pb-10 translate-y-6 justify-self-start md:hidden flex  fa-solid fa-x text-2xl"
+            className="cursor-pointer self-end transition -translate-x-8 pb-10 translate-y-6 justify-self-start md:hidden flex  fa-solid fa-x text-2xl"
           ></i>
           {/* about */}
 
           <a href="#about" onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
               About
             </li>
           </a>
           {/* projects */}
           <a href="#projects" onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg  hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl  hover:animate-pulse transition">
               Projects
             </li>
             {/* logo */}
@@ -58,14 +58,14 @@ export const Nav = () => {
             href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
             target="_blank"
           >
-            <li className="md:hover:text-[#f2f2f2]  hover:text-accent text-lg hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
               Resume
             </li>
           </a>
           {/* contact */}
           <a href="#footer" onClick={() => setNavBarOpen(false)}>
             {" "}
-            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
               Contact
             </li>
           </a>
