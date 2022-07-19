@@ -41,7 +41,7 @@ export const Grid = () => {
         <h1 className=" font-serif font-bold uppercase text-xl md:text-3xl md:pr-8 md:text-left text-center">
           my skills
         </h1>
-        <div className="flex flex-wrap justify-center px-12 text-center  md:text-left  md:gap-8 gap-1 md:pt-0 pt-6 md:justify-between">
+        <div className="flex flex-wrap md:flex-row flex-col justify-center px-12 text-center  md:text-left  md:gap-8 gap-4 md:pt-0 pt-6 md:justify-between">
           <ul className="Skills">
             <li>Html</li>
             <li>Tailwind</li>

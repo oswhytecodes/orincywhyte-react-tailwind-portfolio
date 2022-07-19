@@ -15,13 +15,17 @@ function App() {
 
 const Home = () => {
   return (
-    <section className="Home w-screen h-screen flex flex-col justify-between p-4">
+    <section className="Home w-screen h-screen flex flex-col justify-between px-6 py-8">
       <div className="flex justify-between">
         <HashLink to="/portfolio#about">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition">about</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">
+            about
+          </li>
         </HashLink>
         <HashLink to="/portfolio#projects">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition ">projects</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition ">
+            projects
+          </li>
         </HashLink>
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -37,11 +41,15 @@ const Home = () => {
       </div>
       <div className="flex justify-between">
         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition">resume</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">
+            resume
+          </li>
         </a>
 
         <HashLink to="/portfolio#footer">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition">contact</li>
+          <li className="hover:text-accent text-xl hover:animate-pulse transition">
+            contact
+          </li>
         </HashLink>
       </div>
     </section>
