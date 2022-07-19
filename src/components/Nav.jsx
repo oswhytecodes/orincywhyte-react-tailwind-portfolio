@@ -69,6 +69,38 @@ export const Nav = () => {
               Contact
             </li>
           </a>
+
+          {/* socials - hide at desktop  */}
+          <div className="md:hidden flex text-2xl gap-4">
+            <a href="https://github.com/oswhytecodes">
+              {" "}
+              <li>
+                {" "}
+                <i className="fa-brands fa-github hover:scale-110 transition hover:text-accent"></i>
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/orincywhyte/">
+              {" "}
+              <li>
+                {" "}
+                <i className="fa-brands fa-linkedin-in hover:scale-110 transition hover:text-accent"></i>
+              </li>
+            </a>
+            <a href="https://www.instagram.com/oswhytecodes/">
+              {" "}
+              <li>
+                {" "}
+                <i className="fa-brands fa-instagram hover:scale-110 transition hover:text-accent"></i>
+              </li>
+            </a>
+            <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg">
+              {" "}
+              <li>
+                {" "}
+                <i className="fa-brands fa-youtube hover:scale-110 transition hover:text-accent"></i>
+              </li>
+            </a>
+          </div>
         </div>
 
         {/* mobile nav */}

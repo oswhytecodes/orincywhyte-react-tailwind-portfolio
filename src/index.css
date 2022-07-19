@@ -32,6 +32,11 @@ img {
 .Skills li {
   font-family: "Poppins";
   font-weight: 200;
+  padding: .7px;
+}
+.Home {
+  height: 100vh;
+  /* height: calc(100vh - 1em); */
 }
 .Portfolio {
   background-color: #fff;
@@ -50,7 +55,7 @@ img {
   left: 0;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 80px;
   align-items: center;
   overflow: hidden;
   width: 100%;

@@ -4,7 +4,7 @@ import HeroImage from "/images/orincy.jpeg";
 
 export const Hero = () => {
   return (
-    <section id="about" className="mt-8">
+    <section id="about" className="mt-4">
       <div className="w-full flex flex-wrap gap-4 md:gap-8 lg:justify-between justify-center md:px-16 px-6">
         <img className="w-96 object-cover" src={HeroImage} alt="Orincy Whyte" />
 
