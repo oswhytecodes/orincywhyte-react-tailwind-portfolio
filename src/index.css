@@ -23,6 +23,7 @@ section,
 footer {
   margin-inline: auto;
   max-width: 60em;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -34,4 +35,26 @@ img {
 }
 .Portfolio {
   background-color: #fff;
+}
+
+.Close {
+  display: none;
+}
+
+.Burger {
+  display: block;
+  display: flex;
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  transition: height 1s ease-in-out;
 }

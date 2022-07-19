@@ -9,7 +9,7 @@ export const Hero = () => {
         <img className="w-96 object-cover" src={HeroImage} alt="Orincy Whyte" />
 
         <div className="w-96 md:pt-8 pt-4 text-center">
-          <h1 className="font-serif md:text-3xl">
+          <h1 className="font-serif sm:text-3xl text-2xl">
             Frontend Developer & Graphic Designer
           </h1>
           <p className="my-6 leading-6 tracking-wide font-poppins font-light">
@@ -26,8 +26,8 @@ export const Hero = () => {
           <HashLink to="#projects">
             {" "}
             <button className="cursor uppercase font-poppins text-[#010200]
-            hover:text-[#010200] hover:bg-accent/90 hover:animate-pulse 
-             bg-accent  py-2 px-6 w-36 text-center">
+             hover:bg-accent/90 hover:animate-pulse bg-accent/20
+             border-accent  border-2 py-2 px-6 w-36 text-center">
               PROJECTS
             </button>
           </HashLink>

@@ -16,13 +16,12 @@ export const NavBar = () => {
           <i onClick={handleClick} className="fa-solid fa-bars text-2xl"></i>
         </div>
       </div>
-      <Menu noOverlay width={"100%"} height={"100%"}>
-        <div className="mt-0  bg-[#fff] h-screen">
+      <Menu noOverlay width={"100%"}>
+        <div className="mt-0 pt-0 ml-0 bg-[#fff] h-screen ">
           <div className="text-right pr-6 pt-4">
             <i onClick={handleClick} className="fa-solid fa-x text-2xl"></i>
           </div>
-          <div className="flex flex-col pt-28 justify-center items-center 
-          font-serif text-2xl gap-10">
+          <div className="flex flex-col pt-28 justify-center items-center font-serif text-2xl gap-10">
             <a className="menu-item" href="">
               About
             </a>
