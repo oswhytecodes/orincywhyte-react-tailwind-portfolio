@@ -9,7 +9,7 @@ export const Hero = () => {
         <img className="w-96 object-cover" src={HeroImage} alt="Orincy Whyte" />
 
         <div className="w-96 md:pt-8 pt-4 text-center">
-          <h1 className="font-serif md:text-3xl">
+          <h1 className="font-serif sm:text-3xl text-2xl">
             Frontend Developer & Graphic Designer
           </h1>
           <p className="my-6 leading-6 tracking-wide font-poppins font-light">

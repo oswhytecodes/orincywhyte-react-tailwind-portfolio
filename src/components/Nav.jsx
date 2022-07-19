@@ -1,57 +1,89 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { fallDown as Menu } from 'react-burger-menu'
+import { fallDown as Menu } from "react-burger-menu";
 import Logo from "../favicon.png";
 
 export const Nav = () => {
+  const [navBarOpen, setNavBarOpen] = useState(false);
+  // const [toggle, setToggle ] = useState('')
+  // click toggle
   const handleClick = () => {
-    console.log("hey");
+    setNavBarOpen((prev) => !prev);
+    console.log();
   };
+
   return (
-    <header  className="sticky top-0 left-0">
-      <nav className="py-4 px-8  w-full  z-50  bg-accent drop-shadow-lg">
-        <div className="hidden md:flex justify-between items-center lowercase m-auto w-[30rem]">
-          <a href="#about"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition" >About</li></a>
-          <a href="#projects"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Projects</li></a>
-          <Link to="/">
+    <header className="sticky top-0 left-0">
+      {/* navbar */}
+      <nav
+        className="py-4 px-8 w-full  z-50  bg-accent 
+      drop-shadow-lg"
+      >
+        {/* <div className="Burger hidden md:flex justify-between items-center lowercase m-auto w-[30rem]"> */}
+        <div
+          className={`${navBarOpen ? "Burger" : "Close"} 
+          hidden md:flex justify-between items-center 
+          lowercase m-auto w-[30rem]`}
+          // onClick={() => setNavBarOpen(false)}
+        >
+          <i
+            onClick={() => setNavBarOpen(false)}
+            className="cursor-pointer self-end transition duration-700 ease-in-out -translate-x-8 pb-10 translate-y-6 justify-self-start md:hidden flex  fa-solid fa-x text-2xl"
+          ></i>
+          {/* about */}
+
+          <a href="#about" onClick={() => setNavBarOpen(false)}>
+            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg hover:animate-pulse transition">
+              About
+            </li>
+          </a>
+          {/* projects */}
+          <a href="#projects" onClick={() => setNavBarOpen(false)}>
+            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg  hover:animate-pulse transition">
+              Projects
+            </li>
+            {/* logo */}
+          </a>
+          <Link className="md:flex hidden" to="/">
             {" "}
-            <img className="w-[50px] hover:animate-bounce" src={Logo} alt="Logo" />{" "}
+            <img
+              className="md:w-[50px] md:hover:animate-bounce"
+              src={Logo}
+              alt="Logo"
+            />{" "}
           </Link>
-         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"><li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Resume</li></a> 
-         <a href="#footer"> <li className="hover:text-[#f2f2f2] hover:animate-pulse transition">Contact</li></a>
+          {/* resume */}
+          <a
+            href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
+            target="_blank"
+          >
+            <li className="md:hover:text-[#f2f2f2]  hover:text-accent text-lg hover:animate-pulse transition">
+              Resume
+            </li>
+          </a>
+          {/* contact */}
+          <a href="#footer" onClick={() => setNavBarOpen(false)}>
+            {" "}
+            <li className="md:hover:text-[#f2f2f2] scroll-smooth hover:text-accent text-lg hover:animate-pulse transition">
+              Contact
+            </li>
+          </a>
         </div>
 
-
-        <div className="flex justify-between items-center md:hidden">
+        {/* mobile nav */}
+        <div className="Mobile relative flex md:hidden cursor-pointer justify-between items-center ">
           <Link to="/">
             {" "}
             <img className="w-[50px]" src={Logo} alt="Logo" />{" "}
           </Link>
-          <i onClick={handleClick} className="fa-solid fa-bars text-2xl"></i>
+
+          <i
+            onClick={handleClick}
+            className="NavMenu hover:animate-pulse fa-solid fa-bars text-2xl"
+          ></i>
         </div>
       </nav>
-
-      {/* <Menu noOverlay width={"100%"}>
-        <div className="mt-0 pt-0 ml-0 bg-[#fff] h-screen ">
-          <div className="text-right pr-6 pt-4">
-            <i onClick={handleClick} className="fa-solid fa-x text-2xl"></i>
-          </div>
-          <div className="flex flex-col pt-28 justify-center items-center font-serif text-2xl gap-10">
-            <a className="menu-item" href="">
-              About
-            </a>
-            <a className="menu-item" href="">
-              Projects
-            </a>
-            <a className="menu-item" href="">
-              Resume
-            </a>
-            <a className="menu-item" href="">
-              Contact
-            </a>
-          </div>
-        </div>
-      </Menu> */}
     </header>
   );
 };
