@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { fallDown as Menu } from "react-burger-menu";
 import Logo from "../favicon.png";
 
@@ -25,7 +26,7 @@ export const Nav = () => {
           className={`${navBarOpen ? "Burger" : "Close"} 
           hidden md:flex justify-between items-center 
           lowercase m-auto w-[30rem]`}
-          // onClick={() => setNavBarOpen(false)}
+          onClick={() => setNavBarOpen(false)}
         >
           <i
             onClick={() => setNavBarOpen(false)}
@@ -33,42 +34,42 @@ export const Nav = () => {
           ></i>
           {/* about */}
 
-          <a href="#about" onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
+          <HashLink to="/portfolio#about" onClick={() => setNavBarOpen(false)}>
+            <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
             </li>
-          </a>
+          </HashLink>
           {/* projects */}
-          <a href="#projects" onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl  hover:animate-pulse transition">
+          <HashLink to="/portfolio#projects" onClick={() => setNavBarOpen(false)}>
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
             </li>
             {/* logo */}
-          </a>
-          <Link className="md:flex hidden" to="/">
+          </HashLink>
+          <HashLink className="md:flex hidden" to="/">
             {" "}
             <img
               className="md:w-[50px] md:hover:animate-bounce"
               src={Logo}
               alt="Logo"
             />{" "}
-          </Link>
+          </HashLink>
           {/* resume */}
           <a
             href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
             target="_blank"
           >
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               Resume
             </li>
           </a>
           {/* contact */}
-          <a href="#footer" onClick={() => setNavBarOpen(false)}>
+          <HashLink to="/portfolio#contact" onClick={() => setNavBarOpen(false)}>
             {" "}
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent text-xl hover:animate-pulse transition">
+            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
             </li>
-          </a>
+          </HashLink>
 
           {/* socials - hide at desktop  */}
           <div className="md:hidden flex text-2xl gap-4">

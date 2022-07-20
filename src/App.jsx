@@ -2,12 +2,20 @@ import "./index.css";
 import { Portfolio } from "./components/Portfolio";
 import { Routes, Route, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Hero } from "./components/Hero";
+import { Grid } from "./components/Grid";
+import { Footer } from "./components/Footer";
+
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="portfolio" element={<Portfolio />}></Route>
+        <Route path="portfolio" element={<Portfolio />}>
+          <Route path="about" element={<Hero/>}></Route>
+          <Route path="projects" element={<Grid/>}></Route>
+          <Route path="contact" element={<Footer/>}></Route>
+        </Route>
       </Routes>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer id="footer" className="flex flex-col gap-4 bg-accent p-8">
+    <footer id="contact" className="flex flex-col gap-4 bg-accent p-8">
       <h2 className="font-serif text-2xl">Let's work together</h2>
       <a href="mailto:orincywhyte@gmail.com" target="_blank">orincywhyte@gmail.com</a>
       <a href="https://www.orincywhyte.com/links" target="_blank">orincywhyte.com</a>
