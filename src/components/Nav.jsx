@@ -21,7 +21,7 @@ export const Nav = () => {
         className="py-4 px-8 w-full  z-50  bg-accent 
       drop-shadow-lg"
       >
-        {/* <div className="Burger hidden md:flex justify-between items-center lowercase m-auto w-[30rem]"> */}
+  {/* menu - open/close */}
         <div
           className={`${navBarOpen ? "Burger" : "Close"} 
           hidden md:flex justify-between items-center 
@@ -34,16 +34,13 @@ export const Nav = () => {
           ></i>
           {/* about */}
 
-          <HashLink to="/portfolio/about" onClick={() => setNavBarOpen(false)}>
+          <HashLink to="#about" smooth onClick={() => setNavBarOpen(false)}>
             <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
             </li>
           </HashLink>
           {/* projects */}
-          <HashLink
-            to="/portfolio/projects"
-            onClick={() => setNavBarOpen(false)}
-          >
+          <HashLink to="#projects" smooth onClick={() => setNavBarOpen(false)}>
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
             </li>
@@ -67,10 +64,7 @@ export const Nav = () => {
             </li>
           </a>
           {/* contact */}
-          <HashLink
-            to="/portfolio/contact"
-            onClick={() => setNavBarOpen(false)}
-          >
+          <HashLink to="#contact" smooth onClick={() => setNavBarOpen(false)}>
             {" "}
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
