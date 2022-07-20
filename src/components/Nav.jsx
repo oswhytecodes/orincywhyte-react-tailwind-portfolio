@@ -34,13 +34,16 @@ export const Nav = () => {
           ></i>
           {/* about */}
 
-          <HashLink to="/portfolio/#about" onClick={() => setNavBarOpen(false)}>
+          <HashLink to="/portfolio/about" onClick={() => setNavBarOpen(false)}>
             <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
             </li>
           </HashLink>
           {/* projects */}
-          <HashLink to="/portfolio/#projects" onClick={() => setNavBarOpen(false)}>
+          <HashLink
+            to="/portfolio/projects"
+            onClick={() => setNavBarOpen(false)}
+          >
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
             </li>
@@ -64,7 +67,10 @@ export const Nav = () => {
             </li>
           </a>
           {/* contact */}
-          <HashLink to="/portfolio/#contact" onClick={() => setNavBarOpen(false)}>
+          <HashLink
+            to="/portfolio/contact"
+            onClick={() => setNavBarOpen(false)}
+          >
             {" "}
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
