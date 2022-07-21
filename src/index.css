@@ -51,7 +51,6 @@ img {
 }
 
 .Burger {
-  /* display: block; */
   display: flex;
   position: absolute;
   z-index: 5000;
@@ -59,7 +58,7 @@ img {
   top: 0;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
   overflow: hidden;
   width: 100%;
