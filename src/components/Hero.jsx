@@ -26,7 +26,7 @@ export const Hero = () => {
           <HashLink to="#projects">
             {" "}
             <button className="cursor uppercase font-poppins text-[#010200]
-             hover:bg-accent/90 hover:animate-pulse bg-accent/20
+             hover:bg-accent/90  hover:animate-pulse bg-accent/20
              border-accent  border-2 py-2 px-6 w-36 text-center">
               PROJECTS
             </button>
@@ -35,11 +35,11 @@ export const Hero = () => {
       </div>
       <div>
         <div className="bg-accent mt-8 p-8 md:p-20">
-          <p className="font-serif text-2xl">
+          <p className="font-serif text-2xl tracking-wide">
             “the artist is nothing without the gift, but the gift is nothing
             without the work”
           </p>
-          <p className="font-serif md:text-3xl text-xl pt-2 text-gray-200 text-right">
+          <p className="font-serif md:text-3xl text-xl pt-2 text-right">
             - Emile Zola
           </p>
         </div>
