@@ -17,14 +17,17 @@ export const Nav = () => {
   return (
     <header className="sticky top-0 left-0">
       {/* navbar */}
+      {/* move the menu function here */}
       <nav
-        className="py-4 px-8 w-full  z-50  bg-accent 
-      drop-shadow-lg"
+        className="Navbar py-4 px-8 w-full z-1000  bg-accent 
+        drop-shadow-lg"
       >
-  {/* menu - open/close */}
+        {/* className="Navbar py-4 px-8 w-full z-1000  bg-accent drop-shadow-lg" */}
+
+        {/* menu - open/close */}
         <div
           className={`${navBarOpen ? "Burger" : "Close"} 
-          hidden md:flex justify-between items-center 
+          hidden md:flex md:h-[60px]  justify-between items-center 
           lowercase m-auto w-[30rem]`}
           onClick={() => setNavBarOpen(false)}
         >
@@ -34,13 +37,13 @@ export const Nav = () => {
           ></i>
           {/* about */}
 
-          <HashLink to="#about" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink to="/portfolio#about" smooth onClick={() => setNavBarOpen(false)}>
             <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
             </li>
           </HashLink>
           {/* projects */}
-          <HashLink to="#projects" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink to="/portfolio#projects" smooth onClick={() => setNavBarOpen(false)}>
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
             </li>
@@ -64,7 +67,7 @@ export const Nav = () => {
             </li>
           </a>
           {/* contact */}
-          <HashLink to="#contact" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink to="/portfolio#contact" smooth onClick={() => setNavBarOpen(false)}>
             {" "}
             <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
@@ -105,7 +108,7 @@ export const Nav = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="Mobile relative flex md:hidden cursor-pointer justify-between items-center ">
+        <div className="relative flex md:hidden cursor-pointer justify-between items-center ">
           <Link to="/">
             {" "}
             <img className="w-[50px]" src={Logo} alt="Logo" />{" "}
@@ -113,7 +116,7 @@ export const Nav = () => {
 
           <i
             onClick={handleClick}
-            className="NavMenu hover:animate-pulse fa-solid fa-bars text-2xl"
+            className="hover:animate-pulse fa-solid fa-bars text-2xl"
           ></i>
         </div>
       </nav>

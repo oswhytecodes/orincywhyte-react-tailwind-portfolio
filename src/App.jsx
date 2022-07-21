@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}>
-          <Route path="#about" element={<Hero />}></Route>
-          <Route path="#projects" element={<Grid />}></Route>
-          <Route path="#contact" element={<Footer />}></Route>
-        </Route>
+      
+        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="#about" element={<Hero />}></Route>
+        <Route path="#projects" element={<Grid />}></Route>
+        <Route path="#contact" element={<Footer />}></Route>
       </Routes>
     </div>
   );
@@ -54,7 +54,7 @@ const Home = () => {
           </li>
         </a>
 
-        <HashLink to="/portfolio#footer">
+        <HashLink to="/portfolio#contact">
           <li className="hover:text-accent text-xl hover:animate-pulse transition">
             contact
           </li>
