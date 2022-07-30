@@ -5,52 +5,52 @@ export const Footer = () => {
   return (
     <footer id="contact" className="scroll-pt-32 flex flex-col gap-4 bg-accent p-8">
       <h2 className="font-serif text-2xl ">Let's work together</h2>
-      <a href="mailto:orincywhyte@gmail.com" target="_blank">
+      <a href="mailto:orincywhyte@gmail.com" aria-label="email" target="_blank">
         orincywhyte@gmail.com
       </a>
-      <a href="https://www.orincywhyte.com/links" target="_blank">
+      <a href="https://www.orincywhyte.com/links" aria-label="website links" target="_blank">
         orincywhyte.com
       </a>
       <div className="flex text-2xl gap-4">
-        <a href="https://github.com/oswhytecodes">
+        <a href="https://github.com/oswhytecodes" aria-label="github icon">
           {" "}
-          <li>
+        
             {" "}
             <i
               className="fa-brands fa-github  
             hover:text-[#e5e5e5] hover:scale-150 hover:animate-pulse transition"
             ></i>
-          </li>
+          
         </a>
-        <a href="https://www.linkedin.com/in/orincywhyte/">
+        <a href="https://www.linkedin.com/in/orincywhyte/" aria-label="linked-in icon">
           {" "}
-          <li>
+        
             {" "}
             <i
               className="fa-brands fa-linkedin-in
             hover:text-[#e5e5e5] hover:scale-150 hover:animate-pulse transition"
             ></i>
-          </li>
+          
         </a>
-        <a href="https://www.instagram.com/oswhytecodes/">
+        <a href="https://www.instagram.com/oswhytecodes/" aria-label="instagram icon">
           {" "}
-          <li>
+        
             {" "}
             <i
               className="fa-brands fa-instagram
             hover:text-[#e5e5e5] hover:scale-150 hover:animate-pulse transition"
             ></i>
-          </li>
+          
         </a>
-        <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg">
+        <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg" aria-label="youtube icon">
           {" "}
-          <li>
+        
             {" "}
             <i
               className="fa-brands fa-youtube
             hover:text-[#e5e5e5] hover:scale-150 hover:animate-pulse transition"
             ></i>
-          </li>
+          
         </a>
       </div>
     </footer>

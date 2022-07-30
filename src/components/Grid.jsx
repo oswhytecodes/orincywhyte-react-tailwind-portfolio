@@ -79,22 +79,22 @@ export const Grid = () => {
         <div className="flex flex-wrap md:justify-around justify-center gap-2 mt-4 md:py-8">
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Frontend Dev
-            </h3>
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Graphic Designer
-            </h3>
+            </p>
           </div>
 
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Textile Art{" "}
-            </h3>
+            </p>
           </div>
         </div>
       </div>

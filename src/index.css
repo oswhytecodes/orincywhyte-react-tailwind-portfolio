@@ -46,23 +46,21 @@ img {
 }
 
 .Close {
-  display: none;
-  height: 9.5vh;
+  left: -500px;
+  transition: left 1s ease-out;
 }
 
 .Burger {
   display: flex;
   position: absolute;
   z-index: 5000;
-  right: 0;
+  left: 0;
   top: 0;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 60px;
   align-items: center;
-  overflow: hidden;
-  width: 100%;
+  gap: 60px;
   height: 100vh;
   background-color: #fff;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in;
 }

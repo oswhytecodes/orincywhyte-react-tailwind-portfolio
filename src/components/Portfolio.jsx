@@ -9,7 +9,7 @@ import { Footer } from "./Footer";
 export const Portfolio = () => {
   return (
     <section className="Portfolio">
-      <Nav />
+      <NavBar />
       <Hero />
       <Grid />
       <Footer />
