@@ -12,7 +12,7 @@ html {
 }
 body {
   background: #cbcbcb;
-  background: -webkit-linear-gradient(#fff, rgb(57, 57, 57));
+  background: -webkit-linear-gradient(#fff, rgb(125, 125, 125));
   scroll-behavior: smooth;
 }
 
