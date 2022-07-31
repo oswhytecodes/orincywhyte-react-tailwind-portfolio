@@ -38,15 +38,15 @@ export const Nav = () => {
           {/* about */}
 
           <HashLink to="/portfolio#about" smooth onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2]  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
+            <p className="md:hover:text-[#f2f2f2] list-none font-bold  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
-            </li>
+            </p>
           </HashLink>
           {/* projects */}
           <HashLink to="/portfolio#projects" smooth onClick={() => setNavBarOpen(false)}>
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
+            <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
-            </li>
+            </p>
             {/* logo */}
           </HashLink>
           <HashLink className="md:flex hidden" to="/">
@@ -62,47 +62,47 @@ export const Nav = () => {
             href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
             target="_blank"
           >
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
+            <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               Resume
-            </li>
+            </p>
           </a>
           {/* contact */}
           <HashLink to="/portfolio#contact" smooth onClick={() => setNavBarOpen(false)}>
             {" "}
-            <li className="md:hover:text-[#f2f2f2] hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
+            <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
-            </li>
+            </p>
           </HashLink>
 
           {/* socials - hide at desktop  */}
           <div className="md:hidden flex text-2xl gap-4">
             <a href="https://github.com/oswhytecodes">
               {" "}
-              <li>
+            
                 {" "}
                 <i className="fa-brands fa-github hover:scale-110 transition hover:text-accent"></i>
-              </li>
+              
             </a>
             <a href="https://www.linkedin.com/in/orincywhyte/">
               {" "}
-              <li>
+            
                 {" "}
                 <i className="fa-brands fa-linkedin-in hover:scale-110 transition hover:text-accent"></i>
-              </li>
+              
             </a>
             <a href="https://www.instagram.com/oswhytecodes/">
               {" "}
-              <li>
+            
                 {" "}
                 <i className="fa-brands fa-instagram hover:scale-110 transition hover:text-accent"></i>
-              </li>
+              
             </a>
             <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg">
               {" "}
-              <li>
+            
                 {" "}
                 <i className="fa-brands fa-youtube hover:scale-110 transition hover:text-accent"></i>
-              </li>
+              
             </a>
           </div>
         </div>

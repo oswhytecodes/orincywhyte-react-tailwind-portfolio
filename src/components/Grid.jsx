@@ -11,7 +11,7 @@ export const Grid = () => {
     return (
       <div key={el.id} className="gridCom flex flex-wrap  justify-center">
         {/* image container */}
-        <img className="w-96 h-96 object-cover" src={el.img} alt={el.alt} />
+        <img className="w-96 h-96 object-cover" loading="lazy" src={el.img} alt={el.alt} />
         {/* text container */}
         <div
           style={{ backgroundColor: el.color }}
@@ -22,11 +22,11 @@ export const Grid = () => {
             {el.text}{" "}
           </p>
           <div className="flex mt-8 gap-2">
-            <a href={el.live} target="_blank">
+            <a href={el.live}  target="_blank" aria-label="Visit the live version of this project">
               {" "}
               <ButtonPrim />
             </a>
-            <a href={el.code} target="_blank">
+            <a href={el.code} target="_blank" aria-label="Visit the code I created to build this project">
               <ButtonSec />
             </a>
           </div>
@@ -72,6 +72,7 @@ export const Grid = () => {
               className="w-96 md:mt-4 mt-4"
               src={MovingImage}
               alt="Gif showing a variety of projects"
+              loading="lazy"
             />
           </div>
         </div>
@@ -79,22 +80,22 @@ export const Grid = () => {
         <div className="flex flex-wrap md:justify-around justify-center gap-2 mt-4 md:py-8">
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Frontend Dev
-            </h3>
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Graphic Designer
-            </h3>
+            </p>
           </div>
 
           <div className="flex items-center gap-2">
             <i className="fa-solid fa-star text-accent text-2xl"></i>
-            <h3 className="font-poppins font-light  md:text-xl text-xl">
+            <p className="font-poppins font-light  md:text-xl text-xl">
               Textile Art{" "}
-            </h3>
+            </p>
           </div>
         </div>
       </div>
