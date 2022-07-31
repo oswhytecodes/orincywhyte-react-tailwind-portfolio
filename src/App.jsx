@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-      
+
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="#about" element={<Hero />}></Route>
         <Route path="#projects" element={<Grid />}></Route>
@@ -24,7 +24,7 @@ function App() {
 const Home = () => {
   return (
     <section className="Home w-screen h-screen flex flex-col justify-between px-6 py-8">
-      <div className="flex justify-between">
+      <ul className="flex justify-between">
         <HashLink to="/portfolio#about">
           <li className="hover:text-accent text-xl hover:animate-pulse transition">
             about
@@ -35,7 +35,7 @@ const Home = () => {
             projects
           </li>
         </HashLink>
-      </div>
+      </ul>
       <div className="flex flex-col justify-center items-center">
         <Link to="/portfolio">
           <i className="fa-solid fa-circle-down text-3xl hover:animate-pulse transition hover:text-accent text-accent/80 animate-bounce"></i>
@@ -47,7 +47,7 @@ const Home = () => {
           Developer | Designer
         </h2>
       </div>
-      <div className="flex justify-between">
+      <ul className="flex justify-between">
         <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing">
           <li className="hover:text-accent text-xl hover:animate-pulse transition">
             resume
@@ -59,7 +59,7 @@ const Home = () => {
             contact
           </li>
         </HashLink>
-      </div>
+      </ul>
     </section>
   );
 };

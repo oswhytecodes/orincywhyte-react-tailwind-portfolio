@@ -16,6 +16,10 @@ body {
   scroll-behavior: smooth;
 }
 
+li {
+  list-style: none;
+  font-weight: bold;
+}
 .gridCom:nth-child(even) {
   flex-direction: row-reverse;
 }
