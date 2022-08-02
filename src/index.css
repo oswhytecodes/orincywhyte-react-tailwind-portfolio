@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,500&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,9 +26,6 @@ li {
   list-style: none;
   font-weight: bold;
 }
-.gridCom:nth-child(even) {
-  flex-direction: row-reverse;
-}
 section,
 footer {
   margin-inline: auto;
@@ -36,15 +35,15 @@ img {
   max-width: 100%;
 }
 
+.gridCom:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .Skills li {
   font-family: "Poppins";
   font-weight: 200;
   padding: 0.7px;
 }
-.Home {
-  height: 100vh;
-  /* height: calc(100vh - 1em); */
-}
+
 .Portfolio {
   background-color: #fff;
 }

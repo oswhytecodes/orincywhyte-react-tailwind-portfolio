@@ -23,7 +23,7 @@ function App() {
 
 const Home = () => {
   return (
-    <section className="Home w-screen h-screen flex flex-col justify-between px-6 py-8">
+    <section className="Home w-screen md:h-screen h-[90vh] flex flex-col justify-between px-6 py-8">
       <ul className="flex justify-between">
         <HashLink to="/portfolio#about">
           <li className="hover:text-accent text-xl hover:animate-pulse transition">
