@@ -19,7 +19,7 @@ export const Nav = () => {
       {/* navbar */}
       {/* move the menu function here */}
       <nav
-        className="Navbar py-4 px-8 w-full z-1000  bg-accent 
+        className="Navbar md:py-4 py-2 px-8  w-full z-1000  bg-accent 
         drop-shadow-lg"
       >
         {/* className="Navbar py-4 px-8 w-full z-1000  bg-accent drop-shadow-lg" */}
