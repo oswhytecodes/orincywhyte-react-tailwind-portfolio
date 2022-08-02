@@ -25,19 +25,26 @@ const Home = () => {
   return (
     <section className="Home w-screen h-screen flex flex-col pb-[6em] justify-between px-6 pt-8">
       <ul className="flex justify-between">
-        <HashLink to="/portfolio#about">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition">
+        <li className="hover:text-accent text-xl hover:animate-pulse transition">
+          <HashLink
+            aria-label="Click to visit About section"
+            to="/portfolio#about"
+          >
             about
-          </li>
-        </HashLink>
-        <HashLink to="/portfolio#projects">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition ">
+          </HashLink>
+        </li>
+
+        <li className="hover:text-accent text-xl hover:animate-pulse transition ">
+          <HashLink
+            aria-label="Click to visit Project Section"
+            to="/portfolio#projects"
+          >
             projects
-          </li>
-        </HashLink>
+          </HashLink>
+        </li>
       </ul>
       <div className="flex flex-col justify-center items-center">
-        <Link to="/portfolio">
+        <Link to="/portfolio" aria-label="Click to visit the Portofio page">
           <i className="fa-solid fa-circle-down text-3xl hover:animate-pulse transition hover:text-accent text-accent/80 animate-bounce"></i>
         </Link>
         <h1 className="font-serif font-bold sm:text-6xl text-4xl mt-6">
@@ -48,17 +55,23 @@ const Home = () => {
         </h2>
       </div>
       <ul className="flex justify-between">
-        <a href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing">
-          <li className="hover:text-accent text-xl hover:animate-pulse transition">
+        <li className="hover:text-accent text-xl hover:animate-pulse transition">
+          <a
+            href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
+            aria-label="Click to open Resume in Google Drive"
+          >
             resume
-          </li>
-        </a>
+          </a>
+        </li>
 
-        <HashLink to="/portfolio#contact">
-          <li className="hover:text-accent  text-xl hover:animate-pulse transition">
+        <li className="hover:text-accent  text-xl hover:animate-pulse transition">
+          <HashLink
+            aria-label="Click to visit Contact Section"
+            to="/portfolio#contact"
+          >
             contact
-          </li>
-        </HashLink>
+          </HashLink>
+        </li>
       </ul>
     </section>
   );
