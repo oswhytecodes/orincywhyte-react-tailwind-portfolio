@@ -37,11 +37,12 @@ export const Grid = () => {
   return (
     <section id="projects" className="mt-12">
       {gridEl}
-      <div className="md:flex justify-center bg-accent w-full m-auto mt-8 py-16 md:px-6 px-12">
+      <div className="md:flex justify-center bg-accent w-full m-auto md:mt-8 mt-2 md:py-16 py-10 md:px-6 px-12">
         <h1 className=" font-serif font-bold uppercase text-xl md:text-3xl md:pr-8 md:text-left text-center">
           my skills
         </h1>
-        <div className="flex flex-wrap md:flex-row flex-col justify-center px-12 text-center  md:text-left  md:gap-8 gap-4 md:pt-0 pt-6 md:justify-between">
+        <div className="flex flex-wrap md:flex-row flex-col justify-center px-12 text-center 
+         md:text-left  md:gap-8 gap-4 md:pt-0 pt-6 md:justify-between">
           <ul className="Skills">
             <li>Html</li>
             <li>Tailwind</li>
