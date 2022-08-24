@@ -24,8 +24,7 @@ export const Grid = () => {
         >
           <h2 className="uppercase text-xs text-whiteFC">{el.header}</h2>
           <p className="max-w-[13em] text-slate-500 mt-4 text-lg font-serif text-center">
-            {el.text}{" "}
-            <br />
+            {el.text} <br />
           </p>
           <p className="text-xs mt-4 text-center px-16">
             <span className="font-bold">Tech Stack </span>- {el.stack}

@@ -18,16 +18,18 @@ export const Hero = () => {
             building. My strongest skills involve me designing, creating and
             building responsive layouts and graphics. I am skilled in layout
             design, using Abode Creative Cloud and Figma. I am proficient in
-            HTML and CSS along with JavaScript and TypeScript. I am an experienced and
-            professional Graphic Designer with a demonstrated history of working
-            in the graphic design industry. Consider me when searching for a
-            creative developer.
+            HTML and CSS along with JavaScript and TypeScript. I am an
+            experienced and professional Graphic Designer with a demonstrated
+            history of working in the graphic design industry. Consider me when
+            searching for a creative developer.
           </p>
           <HashLink to="#projects">
             {" "}
-            <button className="cursor uppercase font-poppins text-[#010200]
+            <button
+              className="cursor uppercase font-poppins text-[#010200]
              hover:bg-accent/90  hover:animate-pulse bg-accent/20
-             border-accent  border-2 py-2 px-6 w-36 text-center">
+             border-accent  border-2 py-2 px-6 w-36 text-center"
+            >
               PROJECTS
             </button>
           </HashLink>
