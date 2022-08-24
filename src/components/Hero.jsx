@@ -18,7 +18,7 @@ export const Hero = () => {
             building. My strongest skills involve me designing, creating and
             building responsive layouts and graphics. I am skilled in layout
             design, using Abode Creative Cloud and Figma. I am proficient in
-            HTML and CSS along with JavaScript and Git. I am an experienced and
+            HTML and CSS along with JavaScript and TypeScript. I am an experienced and
             professional Graphic Designer with a demonstrated history of working
             in the graphic design industry. Consider me when searching for a
             creative developer.

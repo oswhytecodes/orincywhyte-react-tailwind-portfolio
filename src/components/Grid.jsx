@@ -11,7 +11,12 @@ export const Grid = () => {
     return (
       <div key={el.id} className="gridCom flex flex-wrap  justify-center">
         {/* image container */}
-        <img className="w-96 h-96 object-cover" loading="lazy" src={el.img} alt={el.alt} />
+        <img
+          className="w-96 h-96 object-cover"
+          loading="lazy"
+          src={el.img}
+          alt={el.alt}
+        />
         {/* text container */}
         <div
           style={{ backgroundColor: el.color }}
@@ -20,13 +25,25 @@ export const Grid = () => {
           <h2 className="uppercase text-xs text-whiteFC">{el.header}</h2>
           <p className="max-w-[13em] text-slate-500 mt-4 text-lg font-serif text-center">
             {el.text}{" "}
+            <br />
+          </p>
+          <p className="text-xs mt-4 text-center px-16">
+            <span className="font-bold">Tech Stack </span>- {el.stack}
           </p>
           <div className="flex mt-8 gap-2">
-            <a href={el.live}  target="_blank" aria-label="Visit the live version of this project">
+            <a
+              href={el.live}
+              target="_blank"
+              aria-label="Visit the live version of this project"
+            >
               {" "}
               <ButtonPrim />
             </a>
-            <a href={el.code} target="_blank" aria-label="Visit the code I created to build this project">
+            <a
+              href={el.code}
+              target="_blank"
+              aria-label="Visit the code I created to build this project"
+            >
               <ButtonSec />
             </a>
           </div>
@@ -41,20 +58,26 @@ export const Grid = () => {
         <h1 className=" font-serif font-bold uppercase text-xl md:text-3xl md:pr-8 md:text-left text-center">
           my skills
         </h1>
-        <div className="flex flex-wrap md:flex-row flex-col justify-center px-12 text-center 
-         md:text-left  md:gap-8 gap-4 md:pt-0 pt-6 md:justify-between">
+        <div
+          className="flex flex-wrap md:flex-row flex-col justify-center px-12 text-center 
+         md:text-left  md:gap-8 gap-4 md:pt-0 pt-6 md:justify-between"
+        >
           <ul className="Skills">
             <li>Html</li>
+            <li>TypeScript</li>
             <li>Tailwind</li>
             <li>Figma</li>
           </ul>
           <ul className="Skills">
             <li>CSS</li>
-            <li>React</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+
             <li>Illustrator</li>
           </ul>
           <ul className="Skills">
             <li>Javascript</li>
+            <li>Redux</li>
             <li>Git/Github</li>
             <li>Photoshop</li>
           </ul>

@@ -37,13 +37,21 @@ export const Nav = () => {
           ></i>
           {/* about */}
 
-          <HashLink to="/portfolio#about" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink
+            to="/portfolio#about"
+            smooth
+            onClick={() => setNavBarOpen(false)}
+          >
             <p className="md:hover:text-[#f2f2f2] list-none font-bold  hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
               About
             </p>
           </HashLink>
           {/* projects */}
-          <HashLink to="/portfolio#projects" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink
+            to="/portfolio#projects"
+            smooth
+            onClick={() => setNavBarOpen(false)}
+          >
             <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl  hover:animate-pulse transition">
               Projects
             </p>
@@ -59,7 +67,7 @@ export const Nav = () => {
           </HashLink>
           {/* resume */}
           <a
-            href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1yU5craTafk7nrbNy8tYj3KQkZBtOS__7/view?usp=sharing"
             target="_blank"
           >
             <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
@@ -67,7 +75,11 @@ export const Nav = () => {
             </p>
           </a>
           {/* contact */}
-          <HashLink to="/portfolio#contact" smooth onClick={() => setNavBarOpen(false)}>
+          <HashLink
+            to="/portfolio#contact"
+            smooth
+            onClick={() => setNavBarOpen(false)}
+          >
             {" "}
             <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition-all">
               Contact
@@ -78,31 +90,19 @@ export const Nav = () => {
           <div className="md:hidden flex text-2xl gap-4">
             <a href="https://github.com/oswhytecodes">
               {" "}
-            
-                {" "}
-                <i className="fa-brands fa-github hover:scale-110 transition hover:text-accent"></i>
-              
+              <i className="fa-brands fa-github hover:scale-110 transition hover:text-accent"></i>
             </a>
             <a href="https://www.linkedin.com/in/orincywhyte/">
               {" "}
-            
-                {" "}
-                <i className="fa-brands fa-linkedin-in hover:scale-110 transition hover:text-accent"></i>
-              
+              <i className="fa-brands fa-linkedin-in hover:scale-110 transition hover:text-accent"></i>
             </a>
             <a href="https://www.instagram.com/oswhytecodes/">
               {" "}
-            
-                {" "}
-                <i className="fa-brands fa-instagram hover:scale-110 transition hover:text-accent"></i>
-              
+              <i className="fa-brands fa-instagram hover:scale-110 transition hover:text-accent"></i>
             </a>
             <a href="https://www.youtube.com/channel/UC_3pNhSyYoZk3Z201kZvgsg">
               {" "}
-            
-                {" "}
-                <i className="fa-brands fa-youtube hover:scale-110 transition hover:text-accent"></i>
-              
+              <i className="fa-brands fa-youtube hover:scale-110 transition hover:text-accent"></i>
             </a>
           </div>
         </div>
