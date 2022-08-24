@@ -59,7 +59,7 @@ export const Nav = () => {
           </HashLink>
           {/* resume */}
           <a
-            href="https://drive.google.com/file/d/1jDrCvf-rdzifUX_sHMk_Hu5tZWEowyVO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ClEnyrNUqjsLy4lSQciDeLpupJz8xHXj/view?usp=sharing"
             target="_blank"
           >
             <p className="md:hover:text-[#f2f2f2] list-none font-bold hover:scale-110 hover:text-accent md:text-lg text-xl hover:animate-pulse transition">
