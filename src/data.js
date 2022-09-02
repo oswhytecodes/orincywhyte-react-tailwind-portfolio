@@ -7,7 +7,7 @@ export default {
         header: "Rain or Shine",
         text: "Experience a colorful weather app, that alters the UI based on weather conditions.",
         stack:
-          "Vite, React, TypeScript, Axios, Redux, Tailwind, Git, Github, Netlify ",
+          "Vite, React, Typescript, Redux, Tailwind, NodeJS, Express, Git, Github, Netlify, AWS EB",
         color: "#66da42",
         live: "https://oswhytecodes-weatherapp.netlify.app/",
         code: "https://github.com/oswhytecodes/weather-app",
