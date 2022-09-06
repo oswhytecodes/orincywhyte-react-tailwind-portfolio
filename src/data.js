@@ -14,6 +14,17 @@ export default {
         alt: "Rain or Shine Weather App user interface",
       },
       {
+        id: "4",
+        img: "images/emails.png",
+        header: "Email Campaigns",
+        text: "Using HTML tables to build a variety of email tamplates.",
+        stack: "HTML, CSS, Git, Github Pages",
+        color: "#66da42",
+        live: "https://oswhytecodes.github.io/emailcampaign/index.html",
+        code: "https://github.com/oswhytecodes/emailcampaign",
+        alt: "Email Templates with HTML tables",
+      },
+      {
         id: "2",
         img: "images/image2.png",
         header: "Reddit-lite",
@@ -34,17 +45,6 @@ export default {
         live: "https://rickandmortyapi-react.netlify.app/",
         code: "https://github.com/oswhytecodes/rickandmorty-react",
         alt: "Rick and Morty homepage",
-      },
-      {
-        id: "4",
-        img: "images/emails.png",
-        header: "Email Campaigns",
-        text: "Using HTML tables to build a variety of email tamplates.",
-        stack: "HTML, CSS, Git, Github Pages",
-        color: "#66da42",
-        live: "https://oswhytecodes.github.io/emailcampaign/index.html",
-        code: "https://github.com/oswhytecodes/emailcampaign",
-        alt: "Email Templates with HTML tables",
       },
 
       // {
