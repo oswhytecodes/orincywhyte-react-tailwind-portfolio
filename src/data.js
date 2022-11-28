@@ -17,7 +17,7 @@ export default {
         id: "4",
         img: "images/emails.png",
         header: "Email Campaigns",
-        text: "Using HTML tables to build a variety of email tamplates.",
+        text: "Using HTML tables to build a variety of email templates.",
         stack: "HTML, CSS, Git, Github Pages",
         color: "#66da42",
         live: "https://oswhytecodes.github.io/emailcampaign/index.html",
