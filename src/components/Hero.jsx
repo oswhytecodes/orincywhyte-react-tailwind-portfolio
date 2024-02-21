@@ -20,7 +20,7 @@ export const Hero = () => {
             HTML and CSS along with JavaScript and TypeScript. I am an
             experienced and professional Graphic Designer with a demonstrated
             history of working in the graphic design industry. Consider me when
-            searching for a creative developer.
+            searching for an efficient designer.
           </p>
           <HashLink to="#projects">
             {" "}
