@@ -13,8 +13,7 @@ export const Hero = () => {
             Frontend Developer & Graphic Designer
           </h1>
           <p className="my-6 leading-6 tracking-wide font-poppins font-light">
-            A Frontend Engineer based in the US, ready to get my feet wet in the
-            tech industry. I am a quick learner, creative and constantly
+            A Graphic Design based in the US, with a focus on logo and web design. I am a quick learner, creative and constantly
             building. My strongest skills involve me designing, creating and
             building responsive layouts and graphics. I am skilled in layout
             design, using Abode Creative Cloud and Figma. I am proficient in
