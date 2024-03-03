@@ -15,7 +15,7 @@ module.exports = {
     },
     colors: {
       accent: "#9dcb3b",
-      accent2: "99E002",
+      accent2: "9dcb3b",
       txt: "#cbcbcb",
     },
     extend: {},
