@@ -57,7 +57,7 @@ const Home = () => {
       <ul className="flex justify-between">
         <li className="hover:text-accent text-xl hover:animate-pulse transition">
           <a
-            href="https://drive.google.com/file/d/1YxxAefmCa38xE8tBhPekhEDcATVfU-nO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1jVBWCsZ_ImeAE07o44aXh0F14u5f2jGX/view?usp=drive_link"
             aria-label="Click to open Resume in Google Drive"
           >
             resume
